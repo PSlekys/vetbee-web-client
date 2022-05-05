@@ -2,6 +2,10 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
+.container {
+  padding: 1.125rem;
+}
+
 header {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -15,13 +19,11 @@ header .top-shelf {
 
 header img {
   height: 4rem;
-  padding: 1rem;
 }
 
 #nav-hamburger {
   color: #ffd400;
   font-size: 2rem;
-  padding: 1rem;
 }
 
 nav {
@@ -35,7 +37,7 @@ nav {
 nav.visible {
   max-height: 80vh;
   opacity: 1;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem 0;
   transition: max-height 1s, padding-top 0.5s, padding-bottom 0.5s, opacity 1s;
 }
 
@@ -52,6 +54,46 @@ nav a:first-child {
 
 nav a:last-child {
   padding-bottom: 0;
+}
+
+.title {
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+}
+
+.control {
+  padding: 0.75rem 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  border: 0;
+  border-bottom: 0.125rem solid rgb(0, 0, 0);
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  border-color: rgba(0, 0, 0, 0.5);
+  transition: border-color 1s;
+  outline: 0;
+}
+
+.btn {
+  background: #000;
+  border: 0;
+  color: #fff;
+  padding: 1rem 1.75rem;
+  text-transform: uppercase;
 }
 
 @media (min-width: 60rem) {
@@ -88,5 +130,10 @@ nav a:last-child {
     display: inline;
     font-size: 1.125rem;
     padding: 0;
+  }
+
+  main > .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
