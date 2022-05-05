@@ -10,6 +10,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -18,8 +28,23 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./assets/scripts/hamburger.js" defer></script>
   </head>
   <body>
-    <img src="./images/logo.svg" alt="VetBee" />
+    <header>
+      <div class="container">
+        <div class="top-shelf">
+          <a href="#">
+            <img src="./assets/images/logo.svg" alt="VetBee" />
+          </a>
+
+          <span class="material-icons" id="nav-hamburger">reorder</span>
+        </div>
+
+        <nav>
+          <a href="#">Login</a>
+        </nav>
+      </div>
+    </header>
   </body>
 </html>
